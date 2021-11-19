@@ -5,5 +5,5 @@ def call(conf){
   def artifactId = pomFile.artifactId
   def type = pomFile.packaging
   def groupId = pomFile.groupId
-  nexusArtifactUploader artifacts: [[artifactId: "${artifactId}", classifier: '', file: "target/${artifactId}-${version}.war", type: type]], credentialsId: 'nexus3', groupId: groupId, nexusUrl: '13.233.150.66:8081', nexusVersion: 'nexus3', protocol: 'http', repository: repoName, version: "${version}"
+  nexusArtifactUploader artifacts: [[artifactId: "${artifactId}", classifier: '', file: "target/${artifactId}-${version}.war", type: type]], credentialsId: 'nexus3', groupId: groupId, nexusUrl: '172.31.6.126:8081', nexusVersion: 'nexus3', protocol: 'http', repository: repoName, version: "${version}"
 }
